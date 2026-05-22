@@ -1,0 +1,31 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.palette-row {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+@each $theme-name, $base-color in $themes {
+  .#{$theme-name}-base {
+    @include color-box($base-color);
+  }
+
+  @for $i from 1 through $steps {
+    .#{$theme-name}-darken-#{$i} {
+      $color: darken($base-color, $variation * $i);
+
+      @include color-box($color);
+    }
+
+    .#{$theme-name}-lighten-#{$i} {
+      $color: lighten($base-color, $variation * $i);
+
+      @include color-box($color);
+    }
+  }
+}

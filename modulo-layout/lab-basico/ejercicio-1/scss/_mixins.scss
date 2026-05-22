@@ -1,0 +1,14 @@
+@mixin color-box($background) {
+  background-color: $background;
+  color: contrast-color($background);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 120px;
+  height: 120px;
+
+  border-radius: 8px;
+  font-weight: bold;
+}
