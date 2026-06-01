@@ -1,0 +1,46 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: flex-start;
+}
+
+.box {
+  width: 120px;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+  font-weight: bold;
+}
+
+.base {
+  background: #e74c3c;
+  border-radius: 20px;
+}
+
+.important {
+  background: #8e44ad;
+  border-radius: 20px;
+}
+
+.warning {
+  background: #f1c40f;
+  border-radius: 20px;
+}
+
+.primary-font {
+  font-family: "Times New Roman", serif;
+}
+
+.secondary-font {
+  font-family: Verdana, sans-serif;
+}
+
+.shadow-box {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+/*# sourceMappingURL=style.css.map */
